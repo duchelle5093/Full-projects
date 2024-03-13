@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <title>Racourciseur de lien en Js</title>
+</head>
+<body>
+
+    <section class="loader">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot1"></div>
+        <div class="dot3"></div>
+        <div class="dot1"></div>
+      </section>
+   
+    <header>
+        <h1>Application racourisseur de lien</h1>
+        <p>mettez un lien valide, sinon ça ne marchera pas </p>
+    </header>
+    <section>
+        <main>
+            <p class="error_message"></p>
+            <input type="text" placeholder="Lien à racourcir" class="long_link">
+            <button onclick="shortLinkFunct()">Racourcir le lien</button>
+            <div class="result">exemple.com</div>
+            <img src="" id="resulte" alt="">
+        </main>
+    </section>
+
+
+    <script src="loader.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

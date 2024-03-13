@@ -1,0 +1,123 @@
+
+
+.loader {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.75s, visibility 0.75s;
+ }
+ .fondu{
+   opacity: 0;
+   visibility: hidden;
+   }
+ 
+ .dot1 {
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: #b3d4fc;
+   animation: pulse 1.5s infinite ease-in-out;
+ }
+ .dot2{
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: rgb(116, 194, 116);
+   animation: pulse2 1.5s infinite ease-in-out;
+ }
+ .dot3{
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: rgb(214, 157, 52);
+   animation: pulse3 1.5s infinite ease-in-out;
+ }  
+ 
+ .dot1:last-child {
+   margin-right: 0;
+
+ }
+ 
+ .dot1:nth-child(1) {
+   animation-delay: -0.3s;
+ }
+ 
+ .dot1:nth-child(2) {
+   animation-delay: -0.1s;
+ }
+ 
+  .dot2{
+   animation-delay: 0.1s;
+ } 
+ .dot3{
+       animation-delay: 0s;
+ }
+
+ 
+ @keyframes pulse {
+   0% {
+     transform: scale(0.8);
+     background-color: rgb(116, 194, 116);
+     box-shadow: 0 0 0 0 rgba(39, 155, 13, 0.7);
+   }
+ 
+   50% {
+     transform: scale(1.2);
+     background-color: #007b78;
+     box-shadow: 0 0 0 10px rgba(20, 90, 42, 0);
+   }
+ 
+   100% {
+     transform: scale(0.8);
+     background-color: rgb(116, 194, 116);
+     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+   }
+ }
+
+ @keyframes pulse2 {
+   0% {
+     transform: scale(0.8);
+     background-color: #b3d4fc;
+     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+   }
+ 
+   50% {
+     transform: scale(1.2);
+     background-color: #6793fb;
+     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+   }
+ 
+   100% {
+     transform: scale(0.8);
+     background-color: #b3d4fc;
+     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+   }
+ }
+
+ @keyframes pulse3 {
+   0% {
+     transform: scale(0.8);
+     background-color: rgb(214, 157, 52);
+     box-shadow: 0 0 0 0 rgba(252, 209, 178, 0.7);
+   }
+ 
+   50% {
+     transform: scale(1.2);
+     background-color: #fb4f32;
+     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+   }
+ 
+   100% {
+     transform: scale(0.8);
+     background-color: rgb(214, 157, 52);
+     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+   }
+ }
